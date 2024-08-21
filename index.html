@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyui and tailwind css ling here -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awasome link here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>assignment3</title>
 </head>
+
 <body>
-    <header></header>
+    <!-- header section start here -->
+    <header class="container mx-auto ">
+        <div class="navbar bg-base-100 flex justify-between items-center mt-6">
+            <div class="navbar-start">
+             <div class="border-1 bg-[#ABEF5F] p-1 rounded-full"> 
+            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+            </div>
+             <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl  ">
+                    <li class="font-bold"><a>Home</a></li>
+                    <li class="text-gray-500"><a>Services</a></li>
+                    <li class="text-gray-500"><a>Portfolio</a></li>
+                    <li class="text-gray-500"><a>Blogs</a></li>
+                    <li class="text-gray-500"><a>Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end gap-5 hidden lg:flex">
+                <i class="fa-solid fa-magnifying-glass text-gray-500 bg-stone-300 rounded-full p-2 "></i>
+                <i class="fa-solid fa-cart-shopping text-gray-500 bg-stone-300 rounded-full p-2"></i>
+                <div px-2>
+                    <button class="font-bold px-3 py-2 rounded-[30px] bg-[#ABEF5F]">Book Consult 
+                        <i class="fa-solid fa-arrow-right  -rotate-45 px-2"></i></button>
+                </div>
+                
+            </div>
+            <div class="border-1 bg-stone-300 rounded-full p-2 lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main section start here  -->
     <main></main>
+
+    <!-- footer section start here -->
     <footer></footer>
-    
+
 </body>
+
 </html>
