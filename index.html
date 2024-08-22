@@ -4,26 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- daisyui and tailwind css ling here -->
-
+    <title>assignment3</title>
+    <!-- Google font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awasome cdn link -->
+    <script src="https://kit.fontawesome.com/a53fd7b0b1.js" crossorigin="anonymous"></script>
+    <!-- Tailwind css cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- font awasome link here -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>assignment3</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
 </head>
 
-<body>
-    <!-- header section start here -->
-    <header class="container mx-auto ">
-        <div class="navbar bg-base-100 flex justify-between items-center mt-6">
+<body">
+    <header class="  px-5 lg:container mx-auto  ">
+        <div class="navbar  flex justify-between items-center mt-6">
             <div class="navbar-start">
-             <div class="border-1 bg-[#ABEF5F] p-1 rounded-full"> 
-            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
-            </div>
-             <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
+                <div class="border-1 bg-[#ABEF5F] p-1 rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                </div>
+                <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-xl  ">
@@ -39,20 +53,42 @@
                 <i class="fa-solid fa-magnifying-glass text-gray-500 bg-stone-300 rounded-full p-2 "></i>
                 <i class="fa-solid fa-cart-shopping text-gray-500 bg-stone-300 rounded-full p-2"></i>
                 <div px-2>
-                    <button class="font-bold px-3 py-2 rounded-[30px] bg-[#ABEF5F]">Book Consult 
+                    <button class="font-bold px-5 py-3 rounded-[30px] bg-[#ABEF5F]">Book Consult
                         <i class="fa-solid fa-arrow-right  -rotate-45 px-2"></i></button>
                 </div>
-                
+
             </div>
             <div class="border-1 bg-stone-300 rounded-full p-2 lg:hidden">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars "></i>
             </div>
         </div>
     </header>
 
-
     <!-- main section start here  -->
-    <main></main>
+    <main>
+        <!-- striking appearance start here -->
+        <section class="container mx-auto mb-25 mt-14">
+            <div class=" space-y-2 lg:space-y-3">
+                <div class=" lg:w-1/2 mx-auto items-center.">
+                    <img  src="./assets/banner.png" alt="">
+                </div>
+                <div class="text-center space-y-5 lg:space-y-8 ">
+                    <h1 class=" text-2xl font-bold lg:text-7xl font-bold  ">A barn house of this design has a <br>  striking  appearance</h1>
+                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
+                    </p>
+
+                </div>
+                <div class="flex justify-center">
+                    <button class="font-bold px-16 lg:px-5 py-3 rounded-[30px] bg-[#ABEF5F] mt-3">View Details
+                        <i class="fa-solid fa-arrow-right  -rotate-45 px-2"></i></button>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
 
     <!-- footer section start here -->
     <footer></footer>
